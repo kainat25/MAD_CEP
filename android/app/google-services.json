@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083006566648",
+    "project_id": "eventvista-90ce3",
+    "storage_bucket": "eventvista-90ce3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083006566648:android:592c2b4ce2c472b2a17b0d",
+        "android_client_info": {
+          "package_name": "com.example.eventvista"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC01i3V2BSys76LaDgNQ7vy9amMsLG83v8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
