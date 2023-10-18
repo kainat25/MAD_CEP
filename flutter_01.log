@@ -1,0 +1,88 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+_Exception: Exception: Source directory "C:\Users\SQ\AppData\Local\Temp\flutter_tools.6d78f8a1\flutter_tools_chrome_device.477856b\Default\optimization_guide_prediction_model_downloads\ec2d8bbc-3358-4fa6-9948-c1bf03b37e6c" does not exist, nothing to copy
+
+```
+#0      copyDirectory (package:flutter_tools/src/base/file_system.dart:120:5)
+#1      copyDirectory (package:flutter_tools/src/base/file_system.dart:143:7)
+#2      copyDirectory (package:flutter_tools/src/base/file_system.dart:143:7)
+#3      ChromiumLauncher._cacheUserSessionInformation (package:flutter_tools/src/web/chrome.dart:350:9)
+#4      ChromiumLauncher.launch.<anonymous closure> (package:flutter_tools/src/web/chrome.dart:224:9)
+#5      _rootRun (dart:async/zone.dart:1391:47)
+#6      _CustomZone.run (dart:async/zone.dart:1301:19)
+#7      _FutureListener.handleWhenComplete (dart:async/future_impl.dart:199:18)
+#8      Future._propagateToListeners.handleWhenCompleteCallback (dart:async/future_impl.dart:810:39)
+#9      Future._propagateToListeners (dart:async/future_impl.dart:866:11)
+#10     Future._propagateToListeners (dart:async/future_impl.dart:765:9)
+#11     Future._completeWithValue (dart:async/future_impl.dart:641:5)
+#12     Future._asyncCompleteWithValue.<anonymous closure> (dart:async/future_impl.dart:715:7)
+#13     _rootRun (dart:async/zone.dart:1399:13)
+#14     _CustomZone.run (dart:async/zone.dart:1301:19)
+#15     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#16     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#17     _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+#18     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+#19     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:123:13)
+#20     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:190:5)
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.13.5, on Microsoft Windows [Version 10.0.17133.1],
+    locale en-US)
+    [32m•[39m Flutter version 3.13.5 on channel stable at C:\src\flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 12fccda598 (3 weeks ago), 2023-09-19 13:56:11 -0700
+    [32m•[39m Engine revision bd986c5ed2
+    [32m•[39m Dart version 3.1.2
+    [32m•[39m DevTools version 2.25.0
+
+[32m[✓][39m Windows Version (Installed version of Windows is version 10 or higher)
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 34.0.0)
+    [32m•[39m Android SDK at C:\Users\SQ\AppData\Local\Android\sdk
+    [32m•[39m Platform android-34, build-tools 34.0.0
+    [32m•[39m Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-10027231)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[33m[!][39m Visual Studio - develop Windows apps (Visual Studio Community 2022 17.7.2)
+    [32m•[39m Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    [32m•[39m Visual Studio Community 2022 version 17.7.34018.315
+    [32m•[39m Windows 10 SDK version 10.0.22621.0
+    [31m✗[39m The current Visual Studio installation is incomplete. Please reinstall Visual
+      Studio.
+
+[32m[✓][39m Android Studio (version 2022.3)
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-10027231)
+
+[32m[✓][39m VS Code (version 1.82.2)
+    [32m•[39m VS Code at C:\Users\SQ\AppData\Local\Programs\Microsoft VS Code
+    [32m•[39m Flutter extension version 3.74.0
+
+[32m[✓][39m Connected device (2 available)
+    [32m•[39m Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version
+      10.0.17133.1]
+    [32m•[39m Chrome (web)      • chrome  • web-javascript • Google Chrome 117.0.5938.149
+
+[32m[✓][39m Network resources
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 1 category.
+```
